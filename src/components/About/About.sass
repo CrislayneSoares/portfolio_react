@@ -1,0 +1,65 @@
+$bg_about: #F5F5F5
+$color_title2: #F197A3
+$color_title1: #817091
+
+@mixin centralizar()
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin center-align()
+    display: flex
+    align-items: center
+
+.container__about
+    width: 100%
+    background-color: $bg_about
+    @include centralizar()
+    flex-direction: column
+    padding: 56px
+    color: $color_title1
+
+    .description
+        margin: 28px 0
+        text-align: justify
+
+.saciais
+    width: 100%
+
+    ul
+        list-style: none
+        display: flex
+
+        li
+            margin: 8px 15px 0 0
+
+
+.container-perfil
+    @include center-align()
+    flex-direction: column
+
+    h3
+        color: $color_title2
+    
+    p
+        color: $color_title1
+        margin: 5px 0 8px 0
+
+    .img-perfil
+        width: 160px
+        border-radius: 50%
+        margin: 18px 0
+
+.box-habilidade
+    width: 150px
+    height: 40px
+    @include center-align()
+    background-color: white
+    border-radius: 10px
+    margin: 10px 0
+
+    figure
+        width: 100%
+        @include center-align()
+        justify-content: space-between
+        padding: 0 8px
