@@ -6,6 +6,7 @@ import './Header.sass'
 import {BrowserRouter, Route, Routes, Link} from 'react-router-dom'
 import Coracao_cheio from '../../assets/imgs/icons/coracao-cheio.svg'
 import Coracao_vazio from '../../assets/imgs/icons/coracao-vazio.svg'
+import Menu from '../../assets/imgs/icons/menu-hamburguer.svg'
 import Home from '../Home/Home'
 
 export default function Header(){
@@ -80,7 +81,7 @@ export default function Header(){
                     </ul>
                 </nav>
                 <figure onClick={()=>{menu("none")}}>
-                    <img src="\src\assets\imgs\icons\menu-hamburguer.svg" alt="Menu Hamburguer" />
+                    <img src={Menu} alt="Menu Hamburguer" />
                 </figure>
                 
             </header>
