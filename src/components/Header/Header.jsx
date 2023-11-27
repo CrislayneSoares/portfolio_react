@@ -4,9 +4,9 @@ import Contact from '../Contact/Contact'
 import Projects from '../Projects/Projects'
 import './Header.sass'
 import {BrowserRouter, Route, Routes, Link} from 'react-router-dom'
-import Coracao_cheio from '../../assets/imgs/icons/coracao-cheio.svg'
-import Coracao_vazio from '../../assets/imgs/icons/coracao-vazio.svg'
-import Menu from '../../assets/imgs/icons/menu-hamburguer.svg'
+import Coracao_cheio from '../../assets/imgs/icons/coracao-branco.png'
+import Coracao_vazio from '../../assets/imgs/icons/coracao.png'
+import Menu from '../../assets/imgs/icons/cardapio.png'
 import Home from '../Home/Home'
 
 export default function Header(){
