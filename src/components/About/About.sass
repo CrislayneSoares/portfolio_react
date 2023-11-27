@@ -1,4 +1,4 @@
-$bg_about: #F5F5F5
+$bg_about: #e4e4e4
 $color_title2: #F197A3
 $color_title1: #817091
 
@@ -14,14 +14,18 @@ $color_title1: #817091
 .container__about
     width: 100%
     background-color: $bg_about
-    @include centralizar()
-    flex-direction: column
     padding: 56px
     color: $color_title1
+    @include centralizar()
 
     .description
         margin: 28px 0
         text-align: justify
+
+.contain
+    width: 100%
+    @include centralizar()
+    flex-direction: column
 
 .saciais
     width: 100%
@@ -37,6 +41,7 @@ $color_title1: #817091
 .container-perfil
     @include center-align()
     flex-direction: column
+    margin-top: 20px
 
     h3
         color: $color_title2
@@ -49,17 +54,42 @@ $color_title1: #817091
         width: 160px
         border-radius: 50%
         margin: 18px 0
-
+.container__hab
+    margin-top: 20px
 .box-habilidade
     width: 150px
     height: 40px
     @include center-align()
     background-color: white
     border-radius: 10px
-    margin: 10px 0
+    margin: 10px 10px
 
     figure
         width: 100%
         @include center-align()
         justify-content: space-between
         padding: 0 8px
+
+@media screen and (min-width: 650px)
+    .contain
+        width:60%
+
+@media screen and (min-width: 750px)
+    .contain
+        width: 60%
+
+@media screen and (min-width: 850px)
+    .contain
+        width: 58%
+    .container__about
+
+@media screen and (min-width: 856px)
+    .container-perfil
+        display: flex
+        flex-direction: row
+    .container__hab
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+    .perfil_dados
+        margin-left: 20px
