@@ -27,9 +27,9 @@ export default function About(){
                         <h3>SOCIAL</h3>
                         <nav className='saciais'>
                             <ul>
-                                <li><img src={linkedin} alt="LinkedIn" /></li>
-                                <li><img src={github} alt="GitHub" /></li>
-                                <li><img src={insta} alt="Instagram" /></li>
+                                <li><a href="https://www.linkedin.com/in/crislayne-ramos-9650b51a2/" target='_blank' rel="noreferrer"><img src={linkedin} alt="LinkedIn" /></a></li>
+                                <li><a href="https://github.com/CrislayneSoares" target='_blank' rel="noreferrer"><img src={github} alt="GitHub" /></a></li>
+                                <li><a href="https://www.instagram.com/crissoaresr/" target='_blank' rel="noreferrer"><img src={insta} alt="Instagram" /></a></li>
                             </ul>
                         </nav>
                     </div>
