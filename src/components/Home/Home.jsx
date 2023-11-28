@@ -11,7 +11,7 @@ export default function Home(){
                 <div className='nuvens-brancas'></div>
                 <div className='zeppelin'></div>
                 <button>
-                    <a href="../../assets/CRISLAYNE_SOARES_RAMOS.pdf" download>Baixar CV</a>
+                    <a href="\src\assets\CRISLAYNE_SOARES_RAMOS.pdf" download={true}>Baixar CV</a>
                 </button>
             </div>
         </section>
