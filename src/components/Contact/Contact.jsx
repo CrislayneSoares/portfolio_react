@@ -1,16 +1,47 @@
 import './Contact.sass'
+import emailJs from '@emailjs/browser'
 import insta from '../../assets/imgs/icons/instagram.png'
 import linkedin from '../../assets/imgs/icons/linkedin.png'
 import github from '../../assets/imgs/icons/github.png'
+import { useState } from 'react'
 
 export default function Contact(){
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+
+    const enviarEmail = (e) => {
+        e.preventDefault()
+
+        if (name === '' || email === '' || message === '') {
+            alert("Por favor, preencha todos os campos!")
+            return
+        }
+
+        const tampleteParams = {
+            from_name: name,
+            email: email,
+            message: message
+        }
+
+        emailJs.send("service_a5m946a", "template_0loaaoc", tampleteParams, "n8K7Fw5yMMcF9s3tU")
+        .then((response) => {
+            console.log("Email enviado!", response.status, response.text)
+            setName('')
+            setEmail('')
+            setMessage('')
+        }, (err) => {
+            console.log("Erro: ", err);
+        })
+    }
+
     return(
         <section className="container__contact">
             <h2>SENDE ME YOUR MESSAGE</h2>
-            <form className='form' action="POST">
-                <input type="text" name="" id="" placeholder='Name'/>
-                <input type="email" name="" id="" placeholder='Email' />
-                <textarea name="" id="" cols="30" rows="8" placeholder='Message'></textarea>
+            <form className='form' onSubmit={enviarEmail}>
+                <input type="text" placeholder='Name' onChange={(e)=> setName(e.target.value)} value={name}/>
+                <input type="email" name="" id="" placeholder='Email' onChange={(e)=>setEmail(e.target.value)} value={email}/>
+                <textarea name="" id="" cols="30" rows="8" placeholder='Message' onChange={(e)=>setMessage(e.target.value)} value={message}></textarea>
                 <button type="submit">SEND</button>
             </form>
             
