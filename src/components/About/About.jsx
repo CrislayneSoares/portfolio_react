@@ -5,9 +5,14 @@ import CSS from '../../assets/imgs/icons/css.png'
 import JS from '../../assets/imgs/icons/js.png'
 import REACT from '../../assets/imgs/icons/react.png'
 import SASS from '../../assets/imgs/icons/sass.png'
+import GIT from '../../assets/imgs/icons/git.svg'
+import FIGMA from '../../assets/imgs/icons/figma.svg'
 import insta from '../../assets/imgs/icons/instagram.png'
 import linkedin from '../../assets/imgs/icons/linkedin.png'
 import github from '../../assets/imgs/icons/github.png'
+import dio from '../../assets/imgs/icons/dio.png'
+import vnw from '../../assets/imgs/icons/vnw.png'
+import ceep from '../../assets/imgs/icons/ceep.png'
 
 export default function About(){
     return(
@@ -35,7 +40,7 @@ export default function About(){
                     </div>
                 </div>
 
-                <p className='description'>Olá, me chamo Crislayne Ramos, tenho 25 anos e atualmente estou estudando desenvolvimento web Front-end na VNW - Vai Na Web. Estou familiarizada com as tecnologias Git, GitHub, HTML5, CSS3 e Javascript. Estou estudando o frameworks Angular e a lib do React. Tenho conhecimentos básicos em Python, C++, Arduino, Java, CorelDraw e MySQL. Sou uma pessoa organizada e curiosa, sempre disposta a aprender!</p>
+                <p className='description'>Olá, me chamo Crislayne Ramos, tenho 25 anos e atualmente estou estudando desenvolvimento web Front-end na VNW - Vai Na Web. Estou familiarizada com as tecnologias Git, GitHub, HTML5, CSS3 e Javascript. Estou estudando o frameworks Angular e a lib do React. Tenho conhecimentos básicos em Python, C++, Arduino, Java, MySQL, CorelDraw e Figma. Sou uma pessoa organizada e curiosa, sempre disposta a aprender!</p>
                 
                 <h2>My Habilities</h2>
                 <section className='container__hab'>
@@ -67,6 +72,50 @@ export default function About(){
                         <figure>
                             <img src={SASS} alt="tech" />
                             <figcaption>Sass</figcaption>
+                        </figure>
+                    </div>
+                    <div className='box-habilidade'>
+                        <figure>
+                            <img src={GIT} alt="tech" />
+                            <figcaption>Git</figcaption>
+                        </figure>
+                    </div>
+                    <div className='box-habilidade'>
+                        <figure>
+                            <img src={FIGMA} alt="tech" />
+                            <figcaption>Figma</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <h2>Studies</h2>
+                <section className='container__estudos'>
+                    <div className='box-estudos'>
+                        <figure>
+                            <img src={vnw} alt="Vai na web" />
+                            <figcaption>Desenvolvimento front-end</figcaption>
+                            <p>ABR/2023 - DEZ/2023</p>
+                        </figure>
+                    </div>
+                    <div className='box-estudos'>
+                        <figure>
+                            <img src={ceep} alt="CEEP" />
+                            <figcaption>Técnico em informática</figcaption>
+                            <p>SET/2021 - JUL/2023</p>
+                        </figure>
+                    </div>
+                    <div className='box-estudos'>
+                        <figure>
+                            <img src={dio} alt="Dio" />
+                            <figcaption>Git e GitHub</figcaption>
+                            <p>AGO/2023</p>
+                        </figure>
+                    </div>
+                    <div className='box-estudos'>
+                        <figure>
+                            <img src={dio} alt="Dio" />
+                            <figcaption>Angular</figcaption>
+                            <p>AGO/2023 - SET/2023</p>
                         </figure>
                     </div>
                 </section>

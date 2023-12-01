@@ -54,8 +54,8 @@ $color_title1: #817091
         width: 160px
         border-radius: 50%
         margin: 18px 0
-.container__hab
-    margin-top: 20px
+.container__hab, .container__estudos
+    margin: 20px
 .box-habilidade
     width: 150px
     height: 40px
@@ -69,6 +69,25 @@ $color_title1: #817091
         @include center-align()
         justify-content: space-between
         padding: 0 8px
+
+.box-estudos
+    width: 250px
+    text-align: center
+    background-color: white
+    border-radius: 10px
+    margin: 10px 10px
+    padding: 20px
+
+    figure
+        img
+            width: 100px
+
+        figcaption
+            font-size: 14px
+            font-weight: 600
+        
+        p
+            font-size: 12px
 
 @media screen and (min-width: 650px)
     .contain
@@ -86,9 +105,12 @@ $color_title1: #817091
     .container-perfil
         display: flex
         flex-direction: row
-    .container__hab
-        display: flex
-        justify-content: center
-        flex-wrap: wrap
+    .container__hab, .container__estudos
+        display: grid
+        grid-template-columns: 1fr 1fr
     .perfil_dados
         margin-left: 20px
+    
+    .container__about
+        .description
+            text-align: justify
