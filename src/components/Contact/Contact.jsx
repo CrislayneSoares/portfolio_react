@@ -5,10 +5,13 @@ import linkedin from '../../assets/imgs/icons/linkedin.png'
 import github from '../../assets/imgs/icons/github.png'
 import { useState } from 'react'
 
+let enviado = ""
+
 export default function Contact(){
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
+    
 
     const enviarEmail = (e) => {
         e.preventDefault()
@@ -30,6 +33,7 @@ export default function Contact(){
             setName('')
             setEmail('')
             setMessage('')
+            enviado = "Mensagem enviada!"
         }, (err) => {
             console.log("Erro: ", err);
         })
@@ -37,12 +41,13 @@ export default function Contact(){
 
     return(
         <section className="container__contact">
-            <h2>SENDE ME YOUR MESSAGE</h2>
+            <h2>SEND ME YOUR MESSAGE</h2>
             <form className='form' onSubmit={enviarEmail}>
                 <input type="text" placeholder='Name' onChange={(e)=> setName(e.target.value)} value={name}/>
                 <input type="email" name="" id="" placeholder='Email' onChange={(e)=>setEmail(e.target.value)} value={email}/>
                 <textarea name="" id="" cols="30" rows="8" placeholder='Message' onChange={(e)=>setMessage(e.target.value)} value={message}></textarea>
                 <button type="submit">SEND</button>
+                <h4>{enviado}</h4>
             </form>
             
             <h2>SOCIAL</h2>
