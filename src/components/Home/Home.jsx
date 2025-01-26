@@ -1,4 +1,8 @@
+import About from '../About/About'
+import Contact from '../Contact/Contact'
+import Projects from '../Projects/Projects'
 import './Home.sass'
+
 
 export default function Home(){
     return(
@@ -10,9 +14,9 @@ export default function Home(){
                 </div>
                 <div className='nuvens-brancas'></div>
                 <div className='zeppelin'></div>
-                <button>
-                    <a href="\src\assets\CRISLAYNE_SOARES_RAMOS.pdf" download={true}>Baixar CV</a>
-                </button>
+                <span>
+                    
+                </span>
             </div>
         </section>
     )

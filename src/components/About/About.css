@@ -1,0 +1,123 @@
+.container__about {
+  width: 100%;
+  background-color: #e4e4e4;
+  padding: 56px;
+  color: #817091;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__about .description {
+  margin: 28px 0;
+  text-align: center;
+}
+
+.contain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.saciais {
+  width: 100%;
+}
+.saciais ul {
+  list-style: none;
+  display: flex;
+}
+.saciais ul li {
+  margin: 8px 15px 0 0;
+}
+
+.container-perfil {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.container-perfil h3 {
+  color: #F197A3;
+}
+.container-perfil p {
+  color: #817091;
+  margin: 5px 0 8px 0;
+}
+.container-perfil .img-perfil {
+  width: 160px;
+  border-radius: 50%;
+  margin: 18px 0;
+}
+
+.container__hab, .container__estudos {
+  margin: 20px;
+}
+
+.box-habilidade {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+.box-habilidade figure {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.box-estudos {
+  width: 250px;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px 10px;
+  padding: 20px;
+}
+.box-estudos figure img {
+  width: 100px;
+}
+.box-estudos figure figcaption {
+  font-size: 14px;
+  font-weight: 600;
+}
+.box-estudos figure p {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 650px) {
+  .contain {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .contain {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .contain {
+    width: 58%;
+  }
+}
+@media screen and (min-width: 856px) {
+  .container-perfil {
+    display: flex;
+    flex-direction: row;
+  }
+  .container__hab, .container__estudos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .perfil_dados {
+    margin-left: 20px;
+  }
+  .container__about .description {
+    text-align: justify;
+  }
+}/*# sourceMappingURL=About.css.map */

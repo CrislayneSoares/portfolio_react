@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #817091;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #F197A3;
+  border-radius: 20px;
+}/*# sourceMappingURL=styleGlobal.css.map */

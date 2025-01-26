@@ -1,0 +1,125 @@
+.container__home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background: rgb(198, 170, 205);
+  background: linear-gradient(180deg, rgb(198, 170, 205) 0%, rgb(202, 215, 237) 34%, rgb(112, 153, 207) 67%, rgb(188, 198, 241) 98%);
+  font-size: 18px;
+}
+
+.fundo {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url("../../assets/imgs/home/completo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 0;
+}
+.fundo .title {
+  text-align: center;
+}
+.fundo .title h1 {
+  font-size: 38px;
+}
+.fundo button {
+  background-color: #F5F5F5;
+  border: 2px solid #F197A3;
+  padding: 10px 25px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.fundo button a {
+  text-decoration: none;
+  color: #466595;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.zeppelin {
+  position: absolute;
+  width: 290px;
+  height: 190px;
+  top: 42vh;
+  left: -5px;
+  animation: float 3s ease-in-out infinite;
+  background-image: url("../../assets/imgs/home/zeppelin.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.nuvens-brancas {
+  position: absolute;
+  top: 45vh;
+  width: 100%;
+  height: 200px;
+  animation: nuvens 5s ease-in-out infinite;
+  background-image: url("../../assets/imgs/home/nuvens-brancas.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0.3turn);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.3turn);
+  }
+}
+@keyframes nuvens {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+}
+@media screen and (min-width: 450px) {
+  .zeppelin {
+    left: 20%;
+  }
+  .nuvens-brancas {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .zeppelin {
+    background-image: url("../../assets/imgs/home/mobile/zeppelin.png");
+  }
+  .nuvens-brancas {
+    background-image: url("../../assets/imgs/home/mobile/nuvens-brancas.png");
+  }
+}
+@media screen and (min-width: 750px) {
+  .zeppelin {
+    left: 20%;
+  }
+  .nuvens-brancas {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 850px) {
+  .zeppelin {
+    left: 25%;
+  }
+  .nuvens-brancas {
+    width: 58%;
+  }
+}
+@media screen and (min-width: 851px) {
+  .zeppelin {
+    left: 33%;
+  }
+  .nuvens-brancas {
+    width: 43%;
+  }
+}/*# sourceMappingURL=Home.css.map */
